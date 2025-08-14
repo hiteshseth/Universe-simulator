@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Universe Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Universe Simulator</h1>
+    <main>
+        <div id="controls">
+            <div class="control-group">
+                <label for="cosmological-constant">Cosmological Constant (Λ)</label>
+                <input type="range" id="cosmological-constant" name="cosmological-constant" min="0" max="200" value="100">
+                <span id="cosmological-constant-value">1.0</span>
+            </div>
+            <div class="control-group">
+                <label for="higgs-mass">Higgs Boson Mass</label>
+                <input type="range" id="higgs-mass" name="higgs-mass" min="0" max="200" value="100">
+                <span id="higgs-mass-value">1.0</span>
+            </div>
+            <div class="control-group">
+                <label for="fine-structure-constant">Fine-Structure Constant (α)</label>
+                <input type="range" id="fine-structure-constant" name="fine-structure-constant" min="0" max="200" value="100">
+                <span id="fine-structure-constant-value">1.0</span>
+            </div>
+            <div class="button-group">
+                <button id="start-button">Start / Restart</button>
+                <button id="reset-button">Reset to Default</button>
+            </div>
+        </div>
+        <canvas id="universe-canvas"></canvas>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
